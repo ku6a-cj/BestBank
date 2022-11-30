@@ -8,14 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView{
+            Home()
+                .tabItem {
+                    Label("Home", systemImage: "house.fill")
+                }
+            Payments()
+                .tabItem {
+                    Label("Payments", systemImage: "arrow.left.arrow.right")
+                }
+            Products()
+                .tabItem {
+                    Label("Products", systemImage: "folder.fill")
+                }
+            Finances()
+                .tabItem {
+                    Label("Finances", systemImage: "dollarsign.circle.fill")
+                }
+            Services()
+                .tabItem {
+                    Label("Services", systemImage: "hand.raised.square.on.square.fill")
+                }
         }
-        .padding()
+        .tint(Color.green)
+        .onAppear {
+            //  let appearance = UITabBarAppearance()
+              //appearance.backgroundEffect = UIBlurEffect(style: .systemUltraThinMaterial)
+             // appearance.backgroundColor = UIColor(Color.gray.opacity(0.2))
+             // UITabBar.appearance().standardAppearance = appearance
+             // UITabBar.appearance().scrollEdgeAppearance = appearance
+          }
     }
 }
 
