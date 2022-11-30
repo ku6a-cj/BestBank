@@ -89,15 +89,15 @@ struct Home: View {
             }.tint(Color.blue)
             
             Button(action: {
-
+             //   print("BLIG")
             }, label: {
                 Image(systemName: "b.circle.fill")
                     .resizable()
                     .foregroundColor(Color.black)
+                    .frame(width: 70, height: 70)})
                     .frame(width: 70, height: 70)
                     .padding(.leading, 0)
-                    .padding(.bottom, 220)})
-                    .frame(width: 70, height: 70)
+                    .padding(.bottom, 220)
 
 
             Text("BLIG")
@@ -108,15 +108,15 @@ struct Home: View {
             
             
             Button(action: {
-                print("Hello, world!")
+             //   print("PHONE!")
             }, label: {
                 Image(systemName: "iphone.homebutton.circle.fill")
                     .resizable()
                     .foregroundColor(Color.orange)
                     .frame(width: 70, height: 70)
-                    .padding(.leading, 260)
-                    .padding(.bottom, 220)
             }).frame(width: 70, height: 70)
+                .padding(.leading, 260)
+                .padding(.bottom, 220)
 
             Text("top up phone")
                 .font(.footnote)
@@ -125,15 +125,14 @@ struct Home: View {
                 .padding(.bottom, 130)
             
             Button(action: {
-
+              //  print("transfer!")
             }, label: {
                 Image(systemName: "arrow.left.arrow.right.circle.fill")
                     .resizable()
                     .foregroundColor(Color.green)
                     .frame(width: 70, height: 70)
-                    .padding(.leading, -170)
-                    .padding(.bottom, 220)
-            }).frame(width: 70, height: 70)
+            }).padding(.leading, -170)
+                .padding(.bottom, 220)
             
             Text("new transfer")
                 .font(.footnote)
