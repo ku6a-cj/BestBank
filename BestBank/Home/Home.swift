@@ -72,7 +72,9 @@ struct Home: View {
                     ScrollView(.horizontal){
                         LazyHStack(alignment: .center, spacing: 0){
                             AvailableFunds(AvaliableFoundss: $AvaliableFoundss)
+
                             LoanAdvertisement()
+                                .padding(.leading,20)
                         }}.frame(height:130)
                     
                 }.frame(height: 240)
