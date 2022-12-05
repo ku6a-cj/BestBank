@@ -8,43 +8,10 @@
 import SwiftUI
 
 struct NewPayments: View {
-    @State var TopMenuChoice = "Select your gender"
-    @State var UserName = "User Name"
-    @State var AvaliableFoundss = "332.41"
+
     var body: some View {
         VStack(alignment: .center){
-            HStack {
-                
-                Text("Hi, "+UserName)
-                
-                Menu{
-                    Button(action: {
-                        TopMenuChoice="Write on Chat"
-                    }, label: {
-                        Text("Write on Chat")
-                    })
-                    Button(action: {
-                        TopMenuChoice="Mobile Autorization"
-                    }, label: {
-                        Text("Mobile Autorization")
-                    })
-                    Button(action: {
-                        TopMenuChoice="Rate App"
-                    }, label: {
-                        Text("Rate App")
-                    })
-                    Button(action: {
-                        TopMenuChoice="Log Out"
-                    }, label: {
-                        Text("Log Out")
-                    })
-                }label:{
-                    Label(
-                        title:{Text("")},
-                        icon: {Image(systemName: "chevron.down")}
-                    ).foregroundColor(Color.black)
-                }
-            }
+            
             Button(action: {
             }, label: {
                 HStack{
