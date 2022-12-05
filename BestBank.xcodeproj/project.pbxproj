@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C91B2F672937856E003BCAD7 /* LoanAdvertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B2F662937856E003BCAD7 /* LoanAdvertisement.swift */; };
 		C91B2F6929378B9C003BCAD7 /* AvailableFunds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B2F6829378B9C003BCAD7 /* AvailableFunds.swift */; };
+		C9A822CD293DD1EE00AE6B26 /* NewPayments.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A822CC293DD1EE00AE6B26 /* NewPayments.swift */; };
+		C9A822CF293DD1FC00AE6B26 /* NewHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A822CE293DD1FC00AE6B26 /* NewHistory.swift */; };
 		C9BB595B29376B6A00E84345 /* BestBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB595A29376B6A00E84345 /* BestBankApp.swift */; };
 		C9BB595D29376B6A00E84345 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB595C29376B6A00E84345 /* ContentView.swift */; };
 		C9BB595F29376B6B00E84345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BB595E29376B6B00E84345 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		C91B2F662937856E003BCAD7 /* LoanAdvertisement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanAdvertisement.swift; sourceTree = "<group>"; };
 		C91B2F6829378B9C003BCAD7 /* AvailableFunds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableFunds.swift; sourceTree = "<group>"; };
+		C9A822CC293DD1EE00AE6B26 /* NewPayments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPayments.swift; sourceTree = "<group>"; };
+		C9A822CE293DD1FC00AE6B26 /* NewHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHistory.swift; sourceTree = "<group>"; };
 		C9BB595729376B6A00E84345 /* BestBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BB595A29376B6A00E84345 /* BestBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestBankApp.swift; sourceTree = "<group>"; };
 		C9BB595C29376B6A00E84345 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,16 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		C9A822CB293DD0F700AE6B26 /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB596A29376CF800E84345 /* Payments.swift */,
+				C9A822CC293DD1EE00AE6B26 /* NewPayments.swift */,
+				C9A822CE293DD1FC00AE6B26 /* NewHistory.swift */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
 		C9BB594E29376B6A00E84345 = {
 			isa = PBXGroup;
 			children = (
@@ -81,7 +95,7 @@
 				C9BB596C29376D1800E84345 /* Products.swift */,
 				C9BB596E29376D2E00E84345 /* Finances.swift */,
 				C9BB597029376D5200E84345 /* Services.swift */,
-				C9BB596A29376CF800E84345 /* Payments.swift */,
+				C9A822CB293DD0F700AE6B26 /* Payments */,
 				C91B2F632937850A003BCAD7 /* Home */,
 				C9BB596029376B6B00E84345 /* Preview Content */,
 			);
@@ -167,8 +181,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9BB595D29376B6A00E84345 /* ContentView.swift in Sources */,
+				C9A822CF293DD1FC00AE6B26 /* NewHistory.swift in Sources */,
 				C9BB596929376C1600E84345 /* Home.swift in Sources */,
 				C91B2F6929378B9C003BCAD7 /* AvailableFunds.swift in Sources */,
+				C9A822CD293DD1EE00AE6B26 /* NewPayments.swift in Sources */,
 				C9BB596F29376D2E00E84345 /* Finances.swift in Sources */,
 				C9BB597129376D5200E84345 /* Services.swift in Sources */,
 				C9BB596D29376D1800E84345 /* Products.swift in Sources */,
@@ -231,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -285,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
